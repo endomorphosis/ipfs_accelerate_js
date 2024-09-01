@@ -1,8 +1,8 @@
 {
-  "name": "ipfs_huggingface_scraper_js",
+  "name": "ipfs_accelerate_js",
   "type": "module",
-  "version": "1.0.17",
-  "description": "with interactive prompt:",
+  "version": "1.0.1",
+  "description": "offload computing tasks to IPFS/libp2p",
   "main": "index.js",
   "scripts": {
     "test": " node tests/test.js"
@@ -12,17 +12,15 @@
     "ipfs_model_manager_js": "^1.0.9",
     "libp2p_kit_js": "^1.0.12",
     "orbitdb_kit_js": "^1.0.9",
-    "prompt-sync": "^4.2.0",
-    "prompt-sync-history": "^1.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/endomorphosis/ipfs_huggingface_scraper_js.git"
+    "url": "git+https://github.com/endomorphosis/ipfs_accelerate_js.git"
   },
   "author": "Benjamin Barber",
   "license": "AGPL-3.0-only",
   "bugs": {
-    "url": "https://github.com/endomorphosis/ipfs_huggingface_scraper_js/issues"
+    "url": "https://github.com/endomorphosis/ipfs_accelerate_js/issues"
   },
-  "homepage": "https://github.com/endomorphosis/ipfs_huggingface_scraper_js#readme"
+  "homepage": "https://github.com/endomorphosis/ipfs_accelerate_js#readme"
 }
