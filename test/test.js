@@ -67,25 +67,25 @@ if (import.meta.url === 'file://' + process.argv[1]) {
         const testIpfsAccelerateJs = new test_ipfs_accelerate_js();
         await testIpfsAccelerateJs.init().then((init) => {
             test_results.init = init;
-            console.log("testIpfsModelManager init: ", init);
+            console.log("testIpfsAccelerateJs init: ", init);
             testIpfsAccelerateJs.test().then((result) => {
                 test_results.results = result;
-                console.log("testIpfsModelManager: ", result);
+                console.log("testIpfsAccelerateJs: ", result);
             }).catch((error) => {
                 test_results.results = error;
-                console.log("testIpfsModelManager error: ", error);
+                console.log("testIpfsAccelerateJs error: ", error);
                 // throw error;
             });
         }).catch((error) => {
-            testIpfsAccelerateJs.init = error ;
-            console.error("testIpfsModelManager init error: ", error);
+            test_results.init = error ;
+            console.error("testIpfsAccelerateJs init error: ", error);
             // throw error;
             testIpfsAccelerateJs.test().then((result) => {
                 test_results.results = result;
-                console.log("testIpfsModelManager: ", result);
+                console.log("testIpfsAccelerateJs: ", result);
             }).catch((error) => {
                 test_results.results = error;
-                console.log("testIpfsModelManager error: ", error);
+                console.log("testIpfsAccelerateJs error: ", error);
                 // throw error;
             });
         });
