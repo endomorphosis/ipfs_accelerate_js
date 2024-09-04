@@ -11,7 +11,7 @@ import os from "os";
 import { exec, execSync } from "child_process";
 import { t } from "tar";
 
-export class test_ipfs_accelerate {
+export class test_ipfs_accelerate_js {
     constructor() {
         this.imports = {};
         this.libp2pKitJs = new libp2pKitJs();
@@ -112,3 +112,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
         // process.exit(1);
     }   
 }
+
+export default test_ipfs_accelerate_js;
